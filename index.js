@@ -2,10 +2,9 @@ document.getElementById('submitBtn').addEventListener('click', function() {
     const nameInput = document.getElementById('nameInput').value;
     
     if (nameInput.trim() !== "") {
-        document.getElementById('greeting').innerText = `Hello, ${nameInput}!`;
+        document.getElementById('greeting').innerText = `Hello, ${nameInput}`;
         document.getElementById('nameInputSection').style.display = 'none';
         document.getElementById('nameDisplaySection').style.display = 'block';
-
 
         // Initialize Particles.js
         particlesJS('particles-js', {
@@ -27,12 +26,7 @@ document.getElementById('submitBtn').addEventListener('click', function() {
                         "color": "#000000"
                     },
                     "polygon": {
-                        "nb_sides": 5
-                    },
-                    "image": {
-                        "src": "img/github.svg",
-                        "width": 100,
-                        "height": 100
+                        "nb_sides": 10
                     }
                 },
                 "opacity": {
